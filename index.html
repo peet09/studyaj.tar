@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sample HTML Page</title>
+    <title>หน้าเว็บตัวอย่างของฉัน</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Sarabun', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
         header {
             background-color: #0056b3;
             color: white;
-            padding: 10px 20px;
+            padding: 20px 20px;
             text-align: center;
-            border-radius: 5px;
         }
+        
+        /* สไตล์สำหรับแถบเมนู (Navigation Bar) */
+        .nav-menu {
+            background-color: #333;
+            display: flex;
+            justify-content: center; /* จัดเมนูให้อยู่กึ่งกลาง */
+        }
+        .nav-menu a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .nav-menu a:hover {
+            background-color: #0056b3; /* เปลี่ยนสีเมื่อเอาเมาส์ชี้ */
+            color: white;
+        }
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -28,7 +47,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        a {
+        .content-link {
             color: #0056b3;
         }
     </style>
@@ -36,9 +55,26 @@
 <body>
 
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
     </header>
 
+    <nav class="nav-menu">
+        <a href="index.html">หน้าแรก</a>
+        <a href="nextpage.html">หน้าต่อไป &rarr;</a>
+    </nav>
+
     <div class="container">
-        <h2>About This Page</h2>
-        <p>This is a simple HTML template. You can use it as a starting point for building your own web pages. It includes basic structural elements and some inline CSS
+        <h2>เกี่ยวกับหน้านี้</h2>
+        <p>นี่คือเทมเพลต HTML พื้นฐานที่เพิ่มแถบเมนูสำหรับการนำทางเรียบร้อยแล้ว คุณสามารถคลิกที่เมนู "หน้าต่อไป" เพื่อไปยังหน้าอื่นๆ ของเว็บไซต์ได้ (อย่าลืมสร้างไฟล์สำหรับหน้านั้นด้วยล่ะ!)</p>
+
+        <h3>สิ่งที่มีในหน้านี้:</h3>
+        <ul>
+            <li>โครงสร้าง HTML5 มาตรฐาน</li>
+            <li>ส่วนหัว (Header) ที่สวยงาม</li>
+            <li><strong>แถบเมนูนำทาง (Navigation Bar) ด้านบน</strong></li>
+            <li>พื้นที่เนื้อหาหลัก (Main Content)</li>
+        </ul>
+    </div>
+
+</body>
+</html>
